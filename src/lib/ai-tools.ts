@@ -1,10 +1,11 @@
 // src/lib/ai-tools.ts — read-only tool layer for the AI copilot.
 //
-// Every tool here only READS local shioaji-server / in-app data. There is
-// no order/cancel/modify/watchlist-write tool in this module, on purpose:
-// the copilot must never be able to touch a real position or order by
-// itself. Any trading action stays a manual step in the existing order
-// ticket / flash-order / grid UI, with the app's normal two-step confirm.
+// Every tool here only READS local broker-server / in-app data (KGI
+// SuperPy, via lib/kgi.ts's broker adapter). There is no order/cancel/
+// modify/watchlist-write tool in this module, on purpose: the copilot
+// must never be able to touch a real position or order by itself. Any
+// trading action stays a manual step in the existing order ticket /
+// flash-order / grid UI, with the app's normal two-step confirm.
 
 import {
     fetchAccountBalance,
@@ -18,7 +19,7 @@ import {
     fetchTrades,
     fetchWatchlists,
     resolveContract,
-} from './shioaji';
+} from './kgi';
 import { searchProducts } from './product-search';
 import { listResearchNotes } from './research-notes';
 import type { AccountTypeName } from './types/portfolio';

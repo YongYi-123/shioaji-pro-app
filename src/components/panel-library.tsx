@@ -33,6 +33,7 @@ import {
     Rows,
     ScrollText,
     Search,
+    Settings,
     Sparkles,
     Star,
     Table,
