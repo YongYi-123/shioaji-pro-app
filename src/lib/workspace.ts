@@ -35,7 +35,8 @@ export type BlockType =
     | 'signals'
     | 'optpnl'
     | 'backtest'
-    | 'assistant';
+    | 'assistant'
+    | 'copilot';
 
 export type PulseSection = 'stocks' | 'industries' | 'flow';
 export type PulseSectionWeights = Record<PulseSection, number>;
@@ -327,6 +328,14 @@ export const BLOCK_META: Record<
         pinnable: false,
         singleton: true,
         defaultSize: { w: 7, h: 14, minW: 5, minH: 9 },
+    },
+    copilot: {
+        label: 'AI 助理（唯讀）',
+        description: '問持倉、帳務、報價、K線、排行榜、自選與研究筆記 — 免費、無法下單',
+        category: 'tools',
+        pinnable: false,
+        singleton: true,
+        defaultSize: { w: 6, h: 14, minW: 4, minH: 8 },
     },
 };
 
