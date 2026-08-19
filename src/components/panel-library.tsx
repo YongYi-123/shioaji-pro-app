@@ -88,6 +88,7 @@ const PANEL_ICONS: Record<BlockType, LucideIcon> = {
     combo: Combine,
     notices: Bell,
     debug: Bug,
+    kgiStatus: Settings,
     grid: Rows,
     heatmap: LayoutGrid,
     pulse: Activity,
