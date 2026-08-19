@@ -32,6 +32,7 @@ import { ComboTicket } from './components/combo-ticket';
 import { DebugPanel } from './components/debug-panel';
 import { GridTicket } from './components/grid-ticket';
 import { NoticeCenter } from './components/notice-center';
+import { AiCopilotPanel } from './components/ai-copilot-panel';
 import { FeatureGate } from './components/feature-gate';
 import { OptPayoff } from './components/opt-payoff';
 import { SectorHeatmap } from './components/sector-heatmap';
@@ -331,6 +332,8 @@ function BlockBody({
                 </FeatureGate>
             );
         }
+        case 'copilot':
+            return <AiCopilotPanel />;
         case 'replay':
             return contract ? (
                 <ReplayPanel contract={contract} />

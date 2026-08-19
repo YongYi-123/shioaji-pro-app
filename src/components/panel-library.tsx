@@ -33,6 +33,7 @@ import {
     Rows,
     ScrollText,
     Search,
+    Sparkles,
     Star,
     Table,
     TrendingUp,
@@ -94,6 +95,7 @@ const PANEL_ICONS: Record<BlockType, LucideIcon> = {
     optpnl: AreaChart,
     backtest: FlaskConical,
     assistant: Bot,
+    copilot: Sparkles,
 };
 
 const ALL_TYPES = Object.keys(BLOCK_META) as BlockType[];

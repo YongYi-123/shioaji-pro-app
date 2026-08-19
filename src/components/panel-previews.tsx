@@ -647,4 +647,12 @@ export const PANEL_PREVIEWS: Record<BlockType, ReactNode> = {
             <rect x='8' y='54' width='52' height='14' rx='5' fill={muted} fillOpacity='0.2' />
         </Frame>
     ),
+    copilot: (
+        <Frame>
+            <rect x='8' y='10' width='56' height='14' rx='6' fill={muted} fillOpacity='0.2' />
+            <rect x='30' y='30' width='82' height='14' rx='6' fill={accent} fillOpacity='0.35' />
+            <rect x='8' y='50' width='40' height='12' rx='6' fill={muted} fillOpacity='0.2' />
+            <rect x='8' y='66' width='104' height='8' rx='4' fill={border} />
+        </Frame>
+    ),
 };
